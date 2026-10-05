@@ -1,0 +1,26 @@
+{
+  "name": "react-chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "server": "node server/index.js",
+  "start": "node server/index.js",
+  "dev:all": "concurrently \"npm run server\" \"npm run dev\""
+},
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.0"
+  }
+}
